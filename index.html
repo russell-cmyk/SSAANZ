@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSAANZ | Soldiers, Sailors and Airmens Association of New Zealand</title>
+    
+    <meta name="description" content="Connecting our serving and ex-service whānau through outdoor adventure. Rest, Stand, Clear.">
+    <link rel="icon" type="image/png" href="images/ssaanz-logo-favacon.png">
+    <link rel="canonical" href="https://www.ssaanz.co.nz/">
+
+    <meta property="og:title" content="SSAANZ | Soldiers, Sailors and Airmens Association of New Zealand">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ssaanz.co.nz/">
+    <meta property="og:image" content="https://www.ssaanz.co.nz/images/hero-hiking.jpg">
+    <meta property="og:image:alt" content="Veterans hiking in the New Zealand outdoors">
+    <meta property="og:description" content="Connecting our serving and ex-service whānau through outdoor adventure. Rest, Stand, Clear.">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Soldiers Sailors and Airmens Association of New Zealand",
+      "url": "https://www.ssaanz.co.nz",
+      "logo": "https://www.ssaanz.co.nz/images/ssaanz-logo-header.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+64-21-725-481",
+        "contactType": "Customer Support",
+        "areaServed": "NZ"
+      }
+    }
+    </script>
+
+    <style>
+        /* Trauma-Informed Root Palette */
+        :root {
+            --color-navy: #0B1D2E;
+            --color-navy-light: #1A3650;
+            --color-silver: #E5E9EC;
+            --color-earth: #4A5D23;
+            --color-text-dark: #2C3539;
+            --color-white: #FFFFFF;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Reset & Base Setup */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-main);
+            color: var(--color-text-dark);
+            background-color: var(--color-silver);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Typography */
+        h1, h2, h3 { font-weight: 600; line-height: 1.2; margin-bottom: 1rem; color: var(--color-navy); }
+        p { margin-bottom: 1.5rem; font-size: 1.05rem; }
+        a { color: var(--color-earth); text-decoration: none; transition: color 0.2s ease; }
+        a:hover { color: var(--color-navy); }
+
+        /* Buttons (Progressive Disclosure & Choice) */
+        .btn {
+            display: inline-block;
+            background-color: var(--color-earth);
+            color: var(--color-white);
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .btn:hover, .btn:focus {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            outline: none;
+        }
+
+        /* Utility Layouts */
+        .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+        .grid-half { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: center; }
+        
+        @media(min-width: 768px) {
+            .grid-half { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* Specific Sections */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(11, 29, 46, 0.7), rgba(11, 29, 46, 0.7)), url('images/hero-hiking.jpg') center/cover no-repeat;
+            color: var(--color-white);
+            padding: 8rem 0;
+            text-align: center;
+        }
+        .hero h1 { color: var(--color-white); font-size: clamp(2rem, 5vw, 3.5rem); max-width: 800px; margin: 0 auto 1.5rem auto; }
+        
+        .section-pad { padding: 5rem 0; background-color: var(--color-white); }
+        .section-alt { background-color: var(--color-silver); }
+
+        .image-card {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            display: block;
+            aspect-ratio: 1 / 1;
+        }
+        .image-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+        .image-card:hover img { transform: scale(1.02); }
+        .card-overlay {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(transparent, var(--color-navy));
+            padding: 2rem 1.5rem;
+            color: var(--color-white);
+        }
+        .card-overlay h3 { color: var(--color-white); margin: 0; }
+
+        /* Forms */
+        .form-group { display: flex; flex-direction: column; gap: 1rem; width: 100%; }
+        .form-group input { padding: 1rem; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        @media(min-width: 600px) {
+            .form-group { flex-direction: row; }
+            .form-group input { flex-grow: 1; }
+        }
+
+        /* Dispatch Grounding Box */
+        .dispatch-box {
+            background-color: rgba(11, 29, 46, 0.85); /* Grounding Navy */
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="site-header"></header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Connecting our serving and ex-service whānau through outdoor adventure.</h1>
+                <p>Rest. Stand. Clear.</p>
+                <a href="/join-us.html" class="btn">Join The Community</a>
+            </div>
+        </section>
+
+        <section class="section-pad">
+            <div class="container grid-half">
+                <div class="content-block">
+                    <h2>Stand With Us. Experience The Outdoors.</h2>
+                    <p>We hold monthly events nationwide for all current and former NZDF personnel and their whānau. Our events focus on three core pillars: Mental & Physical Wellbeing, Community, and Skills.</p>
+                    <p>Every event offers varying fitness levels, ensuring you are challenged but supported, regardless of where you are in your transition journey. By engaging in a peer-led environment, our members maintain vital connections.</p>
+                    <p>Whether you're learning a new wilderness skill or refreshing old ones, our goal is to equip you with capabilities you can use independently or alongside your peers long after the event ends.</p>
+                    <br>
+                    <a href="/join-us.html" class="btn">Join Us</a>
+                </div>
+                <div class="image-block">
+                    <img src="images/community.jpg" alt="Veterans gathered together in the outdoors" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+
+        <section class="section-pad section-alt">
+            <div class="container grid-half">
+                <a href="/events.html" class="image-card">
+                    <img src="images/memberevents.jpg" alt="Hiking in the mountains">
+                    <div class="card-overlay">
+                        <p>Explore</p>
+                        <h3>Member Events</h3>
+                    </div>
+                </a>
+                <a href="/shop.html" class="image-card">
+                    <img src="images/store.jpg" alt="SSAANZ branded gear">
+                    <div class="card-overlay">
+                        <p>Gear Up</p>
+                        <h3>Check Out Our Store</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section-pad">
+            <div class="container grid-half">
+                <div class="image-block">
+                    <img src="images/donate.jpg" alt="Veterans climbing an alpine ridge" style="width: 100%; border-radius: 8px;">
+                </div>
+                <div class="content-block">
+                    <h2>Support The Mission.</h2>
+                    <p>100% of your donations go directly to our members and our outdoor operations. As a peer-led charity, we prioritize putting funding towards making our events accessible to all transitioning veterans.</p>
+                    <p>Your support directly enables us to increase South Island events, cover accommodation, and provide vital transportation for members who need to travel out of town to connect with their peers.</p>
+                    <br>
+                    <a href="/donate.html" class="btn">Donate Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-pad section-alt" style="background: linear-gradient(rgba(11, 29, 46, 0.3), rgba(11, 29, 46, 0.3)), url('images/monthlydispatch.jpg') center/cover; color: white; text-align: center;">
+            <div class="container">
+                <div class="dispatch-box">
+                    <h2 style="color: white;">The Monthly Dispatch</h2>
+                    <p>Sign up to receive updates on upcoming events, community news, and gear drops.</p>
+                    <form action="/subscribe" method="POST" class="form-group">
+                        <label for="email-dispatch" class="visually-hidden" style="display:none;">Email Address</label>
+                        <input type="email" id="email-dispatch" name="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+</html>
