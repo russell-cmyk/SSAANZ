@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <h3>Connect</h3>
                     <ul class="footer-links">
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="support.html">Supporters</a></li>
+                        <li><a href="supporters.html">Supporters</a></li>
                         <li><a href="join-us.html">Join Us</a></li>
                     </ul>
                 </div>

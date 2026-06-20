@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSAANZ | Join the Community - Memberships</title>
+    
+    <meta name="description" content="Becoming a member of SSAANZ connects you to a nationwide community of veterans, serving personnel, and their whānau.">
+    
+    <link rel="icon" type="image/png" href="images/ssaanz-logo-favacon.png">
+    <link rel="canonical" href="https://www.ssaanz.co.nz/membership.html">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="SSAANZ | Join the Community">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ssaanz.co.nz/membership.html">
+    <meta property="og:image" content="https://www.ssaanz.co.nz/images/membership-community.jpg">
+    <meta property="og:image:alt" content="SSAANZ community members gathered outdoors">
+    <meta property="og:description" content="Membership with SSAANZ connects you to a nationwide community of veterans, serving personnel, and their whānau.">
+
+    <style>
+        /* Trauma-Informed Root Palette: Guardian Narrative */
+        :root {
+            --color-navy: #0B1D2E;
+            --color-navy-light: #1A3650;
+            --color-silver: #E5E9EC;
+            --color-earth: #4A5D23;
+            --color-text-dark: #2C3539;
+            --color-white: #FFFFFF;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Reset & Base Setup */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-main);
+            color: var(--color-text-dark);
+            background-color: var(--color-silver);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; margin-bottom: 1rem; color: var(--color-navy); }
+        h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: var(--color-white); }
+        h2 { font-size: 2rem; border-bottom: 3px solid var(--color-earth); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.8rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #3A474E; }
+        a { color: var(--color-earth); text-decoration: none; transition: color 0.2s ease; }
+        a:hover { color: var(--color-navy); }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--color-earth);
+            color: var(--color-white);
+            padding: 0.85rem 2.2rem;
+            border-radius: 3px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+            text-decoration: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .btn:hover, .btn:focus {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+
+        /* Utility Layouts */
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+        .section-pad { padding: 5rem 0; background-color: var(--color-white); }
+        .section-alt { background-color: var(--color-silver); }
+        
+        .grid-half { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+        .grid-uneven { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+        .grid-three { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem; }
+        
+        @media(min-width: 768px) {
+            .grid-half { grid-template-columns: 1fr 1fr; }
+            .grid-uneven { grid-template-columns: 1fr 1.4fr; }
+            .grid-three { grid-template-columns: 1fr 1fr 1fr; }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(11, 29, 46, 0.75), rgba(11, 29, 46, 0.85)), url('images/membership-community.jpg') center/cover no-repeat;
+            color: var(--color-white);
+            padding: 8rem 0 6rem 0;
+            text-align: center;
+            border-bottom: 6px solid var(--color-earth);
+        }
+
+        /* Imagery */
+        .image-block img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 8px 24px rgba(11, 29, 46, 0.2);
+            border-bottom: 4px solid var(--color-earth);
+            display: block;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            background-color: var(--color-white);
+            padding: 2rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--color-navy-light);
+            background: linear-gradient(90deg, rgba(229, 233, 236, 0.4) 0%, rgba(255,255,255,0) 100%);
+        }
+
+        /* Pricing Cards */
+        .pricing-card {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-silver);
+            border-top: 5px solid var(--color-earth);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .pricing-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-earth);
+            margin: 1rem 0;
+        }
+        .pricing-card p {
+            font-size: 1rem;
+            margin-bottom: auto;
+        }
+
+        /* Benefits List */
+        .benefits-list {
+            list-style: none;
+        }
+        .benefits-list li {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .benefits-list h4 {
+            margin-bottom: 0.2rem;
+            color: var(--color-navy);
+            font-size: 1.15rem;
+        }
+        .benefits-list p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        .benefits-list li::before {
+            content: "■";
+            color: var(--color-earth);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 1.2rem;
+        }
+
+        .cta-wrapper {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        /* ---------------------------------------------------
+           Modal (Pop-up) Styles
+           --------------------------------------------------- */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 2000; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(11, 29, 46, 0.85); 
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            background-color: var(--color-white);
+            margin: 5% auto; 
+            padding: 2.5rem;
+            border: 1px solid var(--color-silver);
+            width: 90%;
+            max-width: 500px;
+            border-radius: 4px;
+            border-top: 5px solid var(--color-earth);
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        }
+        .close-btn {
+            color: var(--color-navy-light);
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s ease;
+        }
+        .close-btn:hover {
+            color: var(--color-earth);
+        }
+        
+        /* Modal Tabs */
+        .modal-tabs {
+            display: flex;
+            border-bottom: 2px solid var(--color-silver);
+            margin-bottom: 2rem;
+        }
+        .modal-tab {
+            padding: 1rem;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            font-weight: 700;
+            color: #888;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+        .modal-tab:hover {
+            color: var(--color-navy);
+        }
+        .modal-tab.active {
+            border-bottom: 3px solid var(--color-earth);
+            color: var(--color-earth);
+        }
+        
+        /* Tab Content */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.4s; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Form Styling inside Modal */
+        .modal-form h3 { text-align: center; margin-bottom: 1.5rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.2rem; width: 100%; }
+        .form-group label { font-weight: 600; font-size: 0.95rem; color: var(--color-navy); }
+        .form-group input, .form-group select { 
+            width: 100%; 
+            padding: 0.8rem; 
+            border: 1px solid #ccc; 
+            border-radius: 3px; 
+            font-family: inherit;
+            font-size: 1rem;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--color-earth);
+            box-shadow: 0 0 5px rgba(74, 93, 35, 0.2);
+        }
+        .modal-form .btn { width: 100%; margin-top: 1rem; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injection -->
+    <header id="site-header"></header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Join the SSAANZ Community</h1> <!-- -->
+            </div>
+        </section>
+
+        <!-- Intro & Image Section -->
+        <section class="section-pad">
+            <div class="container grid-uneven">
+                <div>
+                    <p>Becoming a member of SSAANZ connects you to a nationwide community of <strong>veterans, serving personnel, and their whānau</strong> who understand the unique challenges and experiences of service life. <!-- --></p>
+                    
+                    <p>Membership helps you stay informed, stay connected, and access the support you need — whether you’re currently serving, transitioning, or long since discharged. <!-- --></p>
+                    
+                    <p>As a member, you’re part of a growing network committed to <strong>Unity Through Adventure</strong>, community connection, and veteran wellbeing across Aotearoa. <!-- --></p>
+                    
+                    <p>SSAANZ membership also strengthens our ability to deliver navigation support, host community events, and expand regional engagement so more veterans and whānau can access the help they deserve. <!-- --></p>
+                </div>
+                <div class="image-block">
+                    <img src="images/be-a-member.jpg" alt="Become a member of SSAANZ">
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Membership Matters -->
+        <section class="section-pad section-alt">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2>Why Membership Matters</h2> <!-- -->
+                    <p style="max-width: 800px; margin: 0 auto;">Membership with SSAANZ is more than a sign‑up — it’s a commitment to staying connected, supported, and part of a community that understands the realities of service life. <!-- --></p>
+                </div>
+
+                <div class="grid-three">
+                    <div class="content-block">
+                        <h3>For Veterans</h3>
+                        <p>Membership helps maintain connection long after leaving the NZDF, ensuring you’re never navigating challenges alone. <!-- --></p>
+                    </div>
+                    <div class="content-block">
+                        <h3>For Serving Personnel</h3>
+                        <p>It provides a bridge between military life and the wider veteran community, offering support during transitions and throughout your career. <!-- --></p>
+                    </div>
+                    <div class="content-block">
+                        <h3>For Whānau</h3>
+                        <p>It creates a network of understanding, shared experience, and community strength. <!-- --></p>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; max-width: 850px; margin: 3rem auto 0 auto;">
+                    <p>Your membership also strengthens SSAANZ’s ability to deliver navigation support, host community events, and expand regional engagement across Aotearoa. <!-- --></p>
+                    <p>Every member helps us grow a national network grounded in our kaupapa of <strong>Unity Through Adventure</strong>, where shared experiences and community connection improve wellbeing for all who serve. <!-- --></p>
+                    <p>By joining SSAANZ, you’re not just becoming a member — you’re becoming part of a movement that honours service, supports whānau, and builds a stronger veteran community across Aotearoa. <!-- --></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Options -->
+        <section class="section-pad">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h2>Membership Options</h2> <!-- -->
+                </div>
+
+                <div class="grid-three">
+                    <div class="pricing-card">
+                        <h3>Veteran Membership</h3> <!-- -->
+                        <div class="pricing-price">$5/month or $60/year</div> <!-- -->
+                        <p>For former service members who want to stay connected, access support, and be part of a national veteran community. <!-- --></p>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Serving Personnel</h3> <!-- -->
+                        <div class="pricing-price">Free</div> <!-- -->
+                        <p>For those currently serving in the NZDF who want to connect with SSAANZ, attend events, and access support during and after service. <!-- --></p>
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3>Senior Veterans</h3> <!-- -->
+                        <div class="pricing-price">$2/month or $40/year</div> <!-- -->
+                        <p>A reduced‑rate membership for older veterans who want to remain part of the SSAANZ community. <!-- --></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits & CTA -->
+        <section class="section-pad section-alt">
+            <div class="container grid-half">
+                <div>
+                    <h2>Benefits</h2> <!-- -->
+                    <ul class="benefits-list">
+                        <li>
+                            <h4>Access to Navigation & Support</h4> <!-- -->
+                            <p>Get personalised guidance to help you understand and access services, entitlements, and wellbeing support for you and your whānau. <!-- --></p>
+                        </li>
+                        <li>
+                            <h4>Invitations to Community Events</h4> <!-- -->
+                            <p>Be the first to hear about SSAANZ events across Aotearoa — from regional gatherings to community activities grounded in our kaupapa of <strong>Unity Through Adventure</strong>. <!-- --></p>
+                        </li>
+                        <li>
+                            <h4>Member Updates & Newsletters</h4> <!-- -->
+                            <p>Stay informed with updates on events, support opportunities, regional activities, and community stories. <!-- --></p>
+                        </li>
+                        <li>
+                            <h4>Connection With the Wider SSAANZ Community</h4> <!-- -->
+                            <p>Join a supportive network of veterans, serving personnel, and whānau who share similar experiences and values. <!-- --></p>
+                        </li>
+                        <li>
+                            <h4>Support the Mission</h4> <!-- -->
+                            <p>Your membership helps SSAANZ grow its national reach and deliver more support to those who need it. <!-- --></p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="cta-wrapper" style="margin-top: 0; align-self: center;">
+                    <div class="content-block" style="text-align: center; border-left: none; border-top: 4px solid var(--color-earth); box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                        <h3 style="margin-bottom: 1.5rem;">Ready to join our whānau?</h3>
+                        <!-- Updated Button to trigger Modal -->
+                        <button id="openModalBtn" class="btn">Become a Member</button> <!-- -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ---------------------------------------------------
+         Login / Sign Up Modal 
+         --------------------------------------------------- -->
+    <div id="membershipModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <!-- Modal Tabs -->
+            <div class="modal-tabs">
+                <button class="modal-tab active" onclick="switchTab('signup')">Sign Up</button>
+                <button class="modal-tab" onclick="switchTab('login')">Log In</button>
+            </div>
+            
+            <!-- Sign Up Form (Default Active) -->
+            <div id="signupTab" class="tab-content active modal-form">
+                <h3>Create Your Account</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-type">Membership Tier</label>
+                        <select id="signup-type" required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option value="veteran">Veteran Membership ($5/mo or $60/yr)</option>
+                            <option value="serving">Serving Personnel (Free)</option>
+                            <option value="senior">Senior Veteran ($2/mo or $40/yr)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-pass">Create Password</label>
+                        <input type="password" id="signup-pass" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn">Complete Registration</button>
+                </form>
+            </div>
+
+            <!-- Log In Form -->
+            <div id="loginTab" class="tab-content modal-form">
+                <h3>Welcome Back</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-pass">Password</label>
+                        <input type="password" id="login-pass" placeholder="••••••••" required>
+                    </div>
+                    <div style="text-align: right; margin-bottom: 1rem;">
+                        <a href="#" style="font-size: 0.85rem; font-weight: normal;">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Log In</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer Injection -->
+    <footer id="site-footer"></footer>
+
+    <!-- Inject Header and Footer Scripts -->
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+    <!-- Modal Logic Script -->
+    <script>
+        // Get the modal and buttons
+        const modal = document.getElementById("membershipModal");
+        const openBtn = document.getElementById("openModalBtn");
+        const closeBtn = document.getElementsByClassName("close-btn")[0];
+
+        // Open Modal
+        openBtn.onclick = function(e) {
+            e.preventDefault();
+            modal.style.display = "block";
+            // Ensure body doesn't scroll when modal is open
+            document.body.style.overflow = "hidden";
+        }
+
+        // Close Modal via X button
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        // Close Modal via outside click
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            // Remove active classes from all tabs and contents
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.modal-tab').forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to selected tab and content
+            if(tabId === 'signup') {
+                document.getElementById('signupTab').classList.add('active');
+                document.querySelectorAll('.modal-tab')[0].classList.add('active');
+            } else {
+                document.getElementById('loginTab').classList.add('active');
+                document.querySelectorAll('.modal-tab')[1].classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>

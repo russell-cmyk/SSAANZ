@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SSAANZ | Community Events</title>
+    
+    <!-- SEO Optimization -->
+    <meta name="description" content="SSAANZ hosts community events across Aotearoa to bring veterans, serving personnel, and their whānau together in meaningful, supportive, and enjoyable ways.">
+    
+    <link rel="icon" type="image/png" href="images/ssaanz-logo-favacon.png">
+    <link rel="canonical" href="https://www.ssaanz.co.nz/events.html">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:title" content="SSAANZ | Community Events">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ssaanz.co.nz/events.html">
+    <meta property="og:image" content="https://www.ssaanz.co.nz/images/mountain.jpg">
+    <meta property="og:image:alt" content="Veterans participating in a mountain adventure">
+    <meta property="og:description" content="SSAANZ hosts community events throughout the year to bring veterans, serving personnel, and their whānau together.">
+
+    <style>
+        /* Trauma-Informed Root Palette: Guardian Narrative */
+        :root {
+            --color-navy: #0B1D2E;
+            --color-navy-light: #1A3650;
+            --color-silver: #E5E9EC;
+            --color-earth: #4A5D23;
+            --color-text-dark: #2C3539;
+            --color-white: #FFFFFF;
+            --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* Reset & Base Setup */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-main);
+            color: var(--color-text-dark);
+            background-color: var(--color-silver);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; margin-bottom: 1rem; color: var(--color-navy); }
+        h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: var(--color-white); text-align: center; }
+        h2 { font-size: 2rem; border-bottom: 3px solid var(--color-earth); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.8rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #3A474E; }
+        a { color: var(--color-earth); text-decoration: none; transition: color 0.2s ease; font-weight: 600; }
+        a:hover { color: var(--color-navy); }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--color-earth);
+            color: var(--color-white);
+            padding: 1rem 2.5rem;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-decoration: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .btn:hover, .btn:focus {
+            background-color: var(--color-navy);
+            color: var(--color-white);
+            outline: none;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            text-decoration: none;
+        }
+        
+        .btn-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Utility Layouts */
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+        .section-pad { padding: 5rem 0; background-color: var(--color-white); }
+        .section-alt { background-color: var(--color-silver); }
+        
+        .grid-half { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: start; }
+        .grid-three { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem; }
+        
+        @media(min-width: 768px) {
+            .grid-half { grid-template-columns: 1fr 1fr; }
+            .grid-three { grid-template-columns: 1fr 1fr 1fr; }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(11, 29, 46, 0.75), rgba(11, 29, 46, 0.85)), url('images/mountain.jpg') center/cover no-repeat;
+            color: var(--color-white);
+            padding: 8rem 0 6rem 0;
+            text-align: center;
+            border-bottom: 6px solid var(--color-earth);
+        }
+
+        /* Intro Text */
+        .intro-text {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            background-color: var(--color-white);
+            padding: 2rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--color-navy-light);
+            background: linear-gradient(90deg, rgba(229, 233, 236, 0.4) 0%, rgba(255,255,255,0) 100%);
+            height: 100%;
+        }
+
+        /* Image Gallery */
+        .gallery-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-bottom: 4px solid var(--color-earth);
+            transition: transform 0.3s ease;
+        }
+        .gallery-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        @media(min-width: 768px) {
+            .features-list { grid-template-columns: 1fr 1fr; }
+        }
+        .features-list li {
+            background-color: var(--color-white);
+            padding: 1.5rem;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: relative;
+            padding-left: 3.5rem;
+            font-size: 1.1rem;
+        }
+        .features-list li strong {
+            display: block;
+            color: var(--color-earth);
+            margin-bottom: 0.3rem;
+        }
+        .features-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 1.2rem;
+            top: 1.5rem;
+            font-size: 1.5rem;
+            color: var(--color-navy);
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        /* CTA Wrapper */
+        .cta-wrapper {
+            text-align: center;
+        }
+
+        /* ---------------------------------------------------
+           Modal (Pop-up) Styles for Event Dashboard
+           --------------------------------------------------- */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 2000; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(11, 29, 46, 0.85); 
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            background-color: var(--color-white);
+            margin: 3% auto; 
+            border: 1px solid var(--color-silver);
+            width: 95%;
+            max-width: 1000px;
+            border-radius: 4px;
+            border-top: 5px solid var(--color-earth);
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+            display: flex;
+            flex-direction: column;
+            max-height: 90vh;
+        }
+        .modal-header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--color-silver);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        .modal-header h2 {
+            margin: 0;
+            border: none;
+            padding: 0;
+            font-size: 1.5rem;
+        }
+        .close-btn {
+            color: var(--color-navy-light);
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+            transition: color 0.2s ease;
+        }
+        .close-btn:hover {
+            color: var(--color-earth);
+        }
+
+        /* Dashboard Layout */
+        .dashboard-body {
+            display: grid;
+            grid-template-columns: 1fr;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+        @media(min-width: 768px) {
+            .dashboard-body { grid-template-columns: 250px 1fr; }
+        }
+
+        /* Sidebar / Regional Filters */
+        .dashboard-sidebar {
+            background-color: var(--color-navy-light);
+            color: var(--color-white);
+            padding: 1.5rem;
+            overflow-y: auto;
+        }
+        .dashboard-sidebar h4 { color: var(--color-white); border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        .filter-group { margin-bottom: 1.5rem; }
+        .filter-label { display: block; margin-bottom: 0.5rem; font-size: 0.95rem; cursor: pointer; }
+        .filter-label input { margin-right: 0.5rem; }
+
+        /* Main Dashboard Area */
+        .dashboard-main {
+            padding: 2rem;
+            overflow-y: auto;
+            background-color: var(--color-white);
+        }
+        
+        /* Dashboard Tabs */
+        .dash-tabs {
+            display: flex;
+            border-bottom: 2px solid var(--color-silver);
+            margin-bottom: 1.5rem;
+        }
+        .dash-tab {
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            font-weight: 700;
+            color: #888;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+        .dash-tab:hover { color: var(--color-navy); }
+        .dash-tab.active { border-bottom: 3px solid var(--color-earth); color: var(--color-earth); }
+
+        .dash-content { display: none; }
+        .dash-content.active { display: block; animation: fadeIn 0.4s; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Event Cards */
+        .event-card {
+            border: 1px solid var(--color-silver);
+            border-left: 4px solid var(--color-earth);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        @media(min-width: 768px) {
+            .event-card { flex-direction: row; justify-content: space-between; align-items: center; }
+        }
+        .event-details h3 { margin-bottom: 0.3rem; font-size: 1.3rem; }
+        .event-meta { font-size: 0.9rem; color: #666; font-weight: 600; margin-bottom: 0.5rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+        .event-meta span { display: inline-flex; align-items: center; }
+
+        /* Simulated Gallery Grid */
+        .sim-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .sim-gallery div {
+            background-color: var(--color-silver);
+            height: 120px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-navy-light);
+            font-size: 0.9rem;
+            border: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Injection -->
+    <header id="site-header"></header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Community Events Across Aotearoa</h1> <!--[cite: 1] -->
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="section-pad">
+            <div class="container intro-text">
+                <p>SSAANZ hosts community events throughout the year to bring <strong>veterans, serving personnel, and their whānau</strong> together in meaningful, supportive, and enjoyable ways. <!--[cite: 1] --></p>
+                
+                <p>Our events are designed to strengthen connection, reduce isolation, and build a sense of belonging within the veteran community — no matter where you live in Aotearoa. <!--[cite: 1] --></p>
+                
+                <p>Every gathering reflects our founding kaupapa, <strong>Unity Through Adventure</strong>. <!--[cite: 1] --></p>
+                
+                <p>Whether the event is outdoors, social, or community‑based, we believe shared experiences help create lasting bonds, build confidence, and support wellbeing for those who have served and their families. <!--[cite: 1] --></p>
+                
+                <p>Our events are inclusive, family‑friendly, and welcoming to all ages and abilities. From regional meet‑ups to national gatherings, each event is an opportunity to reconnect, make new friendships, and be part of a supportive community grounded in service and whanaungatanga. <!--[cite: 1] --></p>
+            </div>
+        </section>
+
+        <!-- Image Gallery (Visual Support) -->
+        <section class="section-pad section-alt">
+            <div class="container">
+                <div class="grid-three">
+                    <img src="images/fishing.jpg" alt="Veterans fishing together" class="gallery-image">
+                    <img src="images/team.jpg" alt="SSAANZ team camaraderie" class="gallery-image">
+                    <img src="images/climbing.jpg" alt="Veterans rock climbing" class="gallery-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- What Our Events Offer -->
+        <section class="section-pad">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2>What Our Events Offer</h2> <!--[cite: 1] -->
+                </div>
+
+                <div class="grid-half">
+                    <div class="content-block">
+                        <h3>Opportunities to Connect</h3> <!--[cite: 1] -->
+                        <p>Meet other veterans, serving personnel, and whānau in a relaxed, supportive environment. <!--[cite: 1] --></p>
+                    </div>
+                    <div class="content-block">
+                        <h3>Activities That Promote Wellbeing</h3> <!--[cite: 1] -->
+                        <p>Events are designed to encourage confidence, resilience, and positive mental and physical wellbeing. <!--[cite: 1] --></p>
+                    </div>
+                    <div class="content-block">
+                        <h3>Regional Gatherings</h3> <!--[cite: 1] -->
+                        <p>Local events strengthen community networks and ensure support is accessible across Aotearoa. <!--[cite: 1] --></p>
+                    </div>
+                    <div class="content-block">
+                        <h3>A Welcoming Environment</h3> <!--[cite: 1] -->
+                        <p>All events are inclusive and suitable for all ages, abilities, and stages of service or transition. <!--[cite: 1] --></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features & CTA -->
+        <section class="section-pad section-alt">
+            <div class="container">
+                <div style="text-align: center;">
+                    <h2>Event Dashboard Features</h2>
+                    <p style="max-width: 600px; margin: 0 auto;">Discover, connect, and register for upcoming SSAANZ events seamlessly.</p>
+                </div>
+                
+                <ul class="features-list">
+                    <li><strong>Event Calendar:</strong> browse upcoming events across Aotearoa <!--[cite: 1] --></li>
+                    <li><strong>Regional Filters:</strong> find events in your area <!--[cite: 1] --></li>
+                    <li><strong>Event Details & Registration</strong> <!--[cite: 1] --></li>
+                    <li><strong>Photo Gallery:</strong> view highlights from past SSAANZ events <!--[cite: 1] --></li>
+                </ul>
+
+                <div class="cta-wrapper">
+                    <!-- Triggers the Dashboard Modal -->
+                    <button id="openDashboardBtn" class="btn">View Upcoming Events</button> <!--[cite: 1] -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ---------------------------------------------------
+         Event Dashboard Modal (Simulation)
+         --------------------------------------------------- -->
+    <div id="dashboardModal" class="modal">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+                <h2>Event Dashboard</h2>
+                <span class="close-btn">&times;</span>
+            </div>
+            
+            <div class="dashboard-body">
+                <!-- Regional Filters Sidebar -->
+                <aside class="dashboard-sidebar">
+                    <h4>Regional Filters <!--[cite: 1] --></h4>
+                    <div class="filter-group">
+                        <label class="filter-label"><input type="checkbox" checked> All Regions</label>
+                        <label class="filter-label"><input type="checkbox"> North Island</label>
+                        <label class="filter-label"><input type="checkbox"> South Island</label>
+                        <label class="filter-label"><input type="checkbox"> Canterbury</label>
+                        <label class="filter-label"><input type="checkbox"> Wellington</label>
+                        <label class="filter-label"><input type="checkbox"> Auckland</label>
+                    </div>
+                    <h4>Event Type</h4>
+                    <div class="filter-group">
+                        <label class="filter-label"><input type="checkbox" checked> Adventure / Outdoor</label>
+                        <label class="filter-label"><input type="checkbox" checked> Social / BBQ</label>
+                        <label class="filter-label"><input type="checkbox" checked> Family Friendly</label>
+                    </div>
+                </aside>
+                
+                <!-- Main Content Area -->
+                <section class="dashboard-main">
+                    
+                    <!-- Dashboard Tabs -->
+                    <div class="dash-tabs">
+                        <button class="dash-tab active" onclick="switchDashTab('events')">Upcoming Events</button>
+                        <button class="dash-tab" onclick="switchDashTab('gallery')">Photo Gallery <!--[cite: 1] --></button>
+                    </div>
+                    
+                    <!-- Events List Tab (Event Calendar Simulation) -->
+                    <div id="eventsTab" class="dash-content active">
+                        
+                        <!-- Event 1 -->
+                        <div class="event-card">
+                            <div class="event-details">
+                                <h3>Southern Alps Summit Hike</h3>
+                                <div class="event-meta">
+                                    <span>📅 15 July 2026</span>
+                                    <span>📍 Canterbury</span>
+                                    <span>🏔️ Adventure</span>
+                                </div>
+                                <p style="margin:0; font-size: 0.95rem;">Join us for a challenging but rewarding multi-day hike. Designed to test resilience and build strong bonds among peers.</p>
+                            </div>
+                            <div class="event-action">
+                                <button class="btn btn-small">Register</button> <!--[cite: 1] -->
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="event-card">
+                            <div class="event-details">
+                                <h3>Whānau BBQ & Meetup</h3>
+                                <div class="event-meta">
+                                    <span>📅 02 August 2026</span>
+                                    <span>📍 Wellington Harbour</span>
+                                    <span>👨‍👩‍👧‍👦 Family Friendly</span>
+                                </div>
+                                <p style="margin:0; font-size: 0.95rem;">A relaxed afternoon for veterans and their families to connect. Food provided, kids welcome!</p>
+                            </div>
+                            <div class="event-action">
+                                <button class="btn btn-small">Register</button> <!--[cite: 1] -->
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="event-card">
+                            <div class="event-details">
+                                <h3>Backcountry Fly Fishing</h3>
+                                <div class="event-meta">
+                                    <span>📅 22 August 2026</span>
+                                    <span>📍 Tongariro River</span>
+                                    <span>🎣 Outdoor</span>
+                                </div>
+                                <p style="margin:0; font-size: 0.95rem;">Escape into nature and learn the art of fly fishing with experienced guides from within our community.</p>
+                            </div>
+                            <div class="event-action">
+                                <button class="btn btn-small">Register</button> <!--[cite: 1] -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Photo Gallery Tab Simulation -->
+                    <div id="galleryTab" class="dash-content">
+                        <p style="margin-bottom: 1rem;">Highlights from past SSAANZ deployments and community gatherings. <!--[cite: 1] --></p>
+                        <div class="sim-gallery">
+                            <div>[Image Placeholder]</div>
+                            <div>[Image Placeholder]</div>
+                            <div>[Image Placeholder]</div>
+                            <div>[Image Placeholder]</div>
+                            <div>[Image Placeholder]</div>
+                            <div>[Image Placeholder]</div>
+                            <div>[Image Placeholder]</div>
+                            <div>[Image Placeholder]</div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Injection -->
+    <footer id="site-footer"></footer>
+
+    <!-- Inject Header and Footer Scripts -->
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+
+    <!-- Modal Logic Script -->
+    <script>
+        // Get the modal and buttons
+        const dashModal = document.getElementById("dashboardModal");
+        const openDashBtn = document.getElementById("openDashboardBtn");
+        const closeDashBtn = dashModal.querySelector(".close-btn");
+
+        // Open Modal
+        openDashBtn.onclick = function(e) {
+            e.preventDefault();
+            dashModal.style.display = "block";
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
+        }
+
+        // Close Modal via X button
+        closeDashBtn.onclick = function() {
+            dashModal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        // Close Modal via outside click
+        window.onclick = function(event) {
+            if (event.target == dashModal) {
+                dashModal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+
+        // Dashboard Tab Switching Logic
+        function switchDashTab(tabId) {
+            // Remove active classes from all tabs and contents
+            document.querySelectorAll('.dash-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.dash-tab').forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to selected tab and content
+            if(tabId === 'events') {
+                document.getElementById('eventsTab').classList.add('active');
+                document.querySelectorAll('.dash-tab')[0].classList.add('active');
+            } else {
+                document.getElementById('galleryTab').classList.add('active');
+                document.querySelectorAll('.dash-tab')[1].classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>
