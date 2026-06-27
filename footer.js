@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .footer-links { list-style: none; }
             .footer-links li { margin-bottom: 0.5rem; }
             .footer-links a { color: var(--color-navy); }
-            .footer-links a:hover { color: var(--color-earth); }
+            .footer-links a:hover { color: var(--color-bronze); }
             
             .social-icon {
                 display: inline-block;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 margin-top: 1rem;
                 transition: fill 0.2s ease;
             }
-            .social-icon:hover { fill: var(--color-earth); }
+            .social-icon:hover { fill: var(--color-bronze); }
             .footer-bottom {
                 margin-top: 3rem;
                 text-align: center;
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 color: #666;
             }
             .footer-bottom a {
-                color: var(--color-earth);
+                color: var(--color-bronze);
                 font-weight: 600;
             }
             .footer-bottom a:hover {
