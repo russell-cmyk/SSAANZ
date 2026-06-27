@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 text-transform: uppercase;
             }
             .nav-links a:hover {
-                color: var(--color-earth);
+                color: var(--color-bronze);
             }
             /* Basic Mobile Menu Toggle for future implementation */
             .mobile-menu-btn {

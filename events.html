@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SSAANZ | Community Events</title>
     
-    <!-- SEO Optimization -->
     <meta name="description" content="SSAANZ hosts community events across Aotearoa to bring veterans, serving personnel, and their whānau together in meaningful, supportive, and enjoyable ways.">
     
     <link rel="icon" type="image/png" href="images/ssaanz-logo-favacon.png">
     <link rel="canonical" href="https://www.ssaanz.co.nz/events.html">
 
-    <!-- Open Graph Protocol -->
     <meta property="og:title" content="SSAANZ | Community Events">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.ssaanz.co.nz/events.html">
@@ -26,7 +24,7 @@
             --color-navy: #0B1D2E;
             --color-navy-light: #1A3650;
             --color-silver: #E5E9EC;
-            --color-earth: #4A5D23;
+            --color-bronze: #ce7e00;
             --color-text-dark: #2C3539;
             --color-white: #FFFFFF;
             --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -45,16 +43,16 @@
         /* Typography */
         h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; margin-bottom: 1rem; color: var(--color-navy); }
         h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; color: var(--color-white); text-align: center; }
-        h2 { font-size: 2rem; border-bottom: 3px solid var(--color-earth); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 2rem; border-bottom: 3px solid var(--color-bronze); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
         h3 { font-size: 1.4rem; color: var(--color-navy); margin-bottom: 0.8rem; }
         p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #3A474E; }
-        a { color: var(--color-earth); text-decoration: none; transition: color 0.2s ease; font-weight: 600; }
+        a { color: var(--color-bronze); text-decoration: none; transition: color 0.2s ease; font-weight: 600; }
         a:hover { color: var(--color-navy); }
 
         /* Buttons */
         .btn {
             display: inline-block;
-            background-color: var(--color-earth);
+            background-color: var(--color-bronze);
             color: var(--color-white);
             padding: 1rem 2.5rem;
             border-radius: 3px;
@@ -103,7 +101,7 @@
             color: var(--color-white);
             padding: 8rem 0 6rem 0;
             text-align: center;
-            border-bottom: 6px solid var(--color-earth);
+            border-bottom: 6px solid var(--color-bronze);
         }
 
         /* Intro Text */
@@ -130,7 +128,7 @@
             object-fit: cover;
             border-radius: 4px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-bottom: 4px solid var(--color-earth);
+            border-bottom: 4px solid var(--color-bronze);
             transition: transform 0.3s ease;
         }
         .gallery-image:hover {
@@ -160,7 +158,7 @@
         }
         .features-list li strong {
             display: block;
-            color: var(--color-earth);
+            color: var(--color-bronze);
             margin-bottom: 0.3rem;
         }
         .features-list li::before {
@@ -180,8 +178,8 @@
         }
 
         /* ---------------------------------------------------
-           Modal (Pop-up) Styles for Event Dashboard
-           --------------------------------------------------- */
+            Modal (Pop-up) Styles for Event Dashboard
+            --------------------------------------------------- */
         .modal {
             display: none; 
             position: fixed; 
@@ -201,7 +199,7 @@
             width: 95%;
             max-width: 1000px;
             border-radius: 4px;
-            border-top: 5px solid var(--color-earth);
+            border-top: 5px solid var(--color-bronze);
             position: relative;
             box-shadow: 0 10px 40px rgba(0,0,0,0.4);
             display: flex;
@@ -231,7 +229,7 @@
             transition: color 0.2s ease;
         }
         .close-btn:hover {
-            color: var(--color-earth);
+            color: var(--color-bronze);
         }
 
         /* Dashboard Layout */
@@ -282,7 +280,7 @@
             font-family: inherit;
         }
         .dash-tab:hover { color: var(--color-navy); }
-        .dash-tab.active { border-bottom: 3px solid var(--color-earth); color: var(--color-earth); }
+        .dash-tab.active { border-bottom: 3px solid var(--color-bronze); color: var(--color-bronze); }
 
         .dash-content { display: none; }
         .dash-content.active { display: block; animation: fadeIn 0.4s; }
@@ -295,7 +293,7 @@
         /* Event Cards */
         .event-card {
             border: 1px solid var(--color-silver);
-            border-left: 4px solid var(--color-earth);
+            border-left: 4px solid var(--color-bronze);
             padding: 1.5rem;
             border-radius: 4px;
             margin-bottom: 1.5rem;
@@ -332,33 +330,29 @@
 </head>
 <body>
 
-    <!-- Header Injection -->
     <header id="site-header"></header>
 
     <main>
-        <!-- Hero Section -->
         <section class="hero">
             <div class="container">
-                <h1>Community Events Across Aotearoa</h1> <!--[cite: 1] -->
+                <h1>Community Events Across Aotearoa</h1>
             </div>
         </section>
 
-        <!-- Intro Section -->
         <section class="section-pad">
             <div class="container intro-text">
-                <p>SSAANZ hosts community events throughout the year to bring <strong>veterans, serving personnel, and their whānau</strong> together in meaningful, supportive, and enjoyable ways. <!--[cite: 1] --></p>
+                <p>SSAANZ hosts community events throughout the year to bring <strong>veterans, serving personnel, and their whānau</strong> together in meaningful, supportive, and enjoyable ways.</p>
                 
-                <p>Our events are designed to strengthen connection, reduce isolation, and build a sense of belonging within the veteran community — no matter where you live in Aotearoa. <!--[cite: 1] --></p>
+                <p>Our events are designed to strengthen connection, reduce isolation, and build a sense of belonging within the veteran community — no matter where you live in Aotearoa.</p>
                 
-                <p>Every gathering reflects our founding kaupapa, <strong>Unity Through Adventure</strong>. <!--[cite: 1] --></p>
+                <p>Every gathering reflects our founding kaupapa, <strong>Unity Through Adventure</strong>.</p>
                 
-                <p>Whether the event is outdoors, social, or community‑based, we believe shared experiences help create lasting bonds, build confidence, and support wellbeing for those who have served and their families. <!--[cite: 1] --></p>
+                <p>Whether the event is outdoors, social, or community‑based, we believe shared experiences help create lasting bonds, build confidence, and support wellbeing for those who have served and their families.</p>
                 
-                <p>Our events are inclusive, family‑friendly, and welcoming to all ages and abilities. From regional meet‑ups to national gatherings, each event is an opportunity to reconnect, make new friendships, and be part of a supportive community grounded in service and whanaungatanga. <!--[cite: 1] --></p>
+                <p>Our events are inclusive, family‑friendly, and welcoming to all ages and abilities. From regional meet‑ups to national gatherings, each event is an opportunity to reconnect, make new friendships, and be part of a supportive community grounded in service and whanaungatanga.</p>
             </div>
         </section>
 
-        <!-- Image Gallery (Visual Support) -->
         <section class="section-pad section-alt">
             <div class="container">
                 <div class="grid-three">
@@ -369,35 +363,33 @@
             </div>
         </section>
 
-        <!-- What Our Events Offer -->
         <section class="section-pad">
             <div class="container">
                 <div style="text-align: center; margin-bottom: 3rem;">
-                    <h2>What Our Events Offer</h2> <!--[cite: 1] -->
+                    <h2>What Our Events Offer</h2>
                 </div>
 
                 <div class="grid-half">
                     <div class="content-block">
-                        <h3>Opportunities to Connect</h3> <!--[cite: 1] -->
-                        <p>Meet other veterans, serving personnel, and whānau in a relaxed, supportive environment. <!--[cite: 1] --></p>
+                        <h3>Opportunities to Connect</h3>
+                        <p>Meet other veterans, serving personnel, and whānau in a relaxed, supportive environment.</p>
                     </div>
                     <div class="content-block">
-                        <h3>Activities That Promote Wellbeing</h3> <!--[cite: 1] -->
-                        <p>Events are designed to encourage confidence, resilience, and positive mental and physical wellbeing. <!--[cite: 1] --></p>
+                        <h3>Activities That Promote Wellbeing</h3>
+                        <p>Events are designed to encourage confidence, resilience, and positive mental and physical wellbeing.</p>
                     </div>
                     <div class="content-block">
-                        <h3>Regional Gatherings</h3> <!--[cite: 1] -->
-                        <p>Local events strengthen community networks and ensure support is accessible across Aotearoa. <!--[cite: 1] --></p>
+                        <h3>Regional Gatherings</h3>
+                        <p>Local events strengthen community networks and ensure support is accessible across Aotearoa.</p>
                     </div>
                     <div class="content-block">
-                        <h3>A Welcoming Environment</h3> <!--[cite: 1] -->
-                        <p>All events are inclusive and suitable for all ages, abilities, and stages of service or transition. <!--[cite: 1] --></p>
+                        <h3>A Welcoming Environment</h3>
+                        <p>All events are inclusive and suitable for all ages, abilities, and stages of service or transition.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features & CTA -->
         <section class="section-pad section-alt">
             <div class="container">
                 <div style="text-align: center;">
@@ -406,24 +398,20 @@
                 </div>
                 
                 <ul class="features-list">
-                    <li><strong>Event Calendar:</strong> browse upcoming events across Aotearoa <!--[cite: 1] --></li>
-                    <li><strong>Regional Filters:</strong> find events in your area <!--[cite: 1] --></li>
-                    <li><strong>Event Details & Registration</strong> <!--[cite: 1] --></li>
-                    <li><strong>Photo Gallery:</strong> view highlights from past SSAANZ events <!--[cite: 1] --></li>
+                    <li><strong>Event Calendar:</strong> browse upcoming events across Aotearoa</li>
+                    <li><strong>Regional Filters:</strong> find events in your area</li>
+                    <li><strong>Event Details & Registration</strong></li>
+                    <li><strong>Photo Gallery:</strong> view highlights from past SSAANZ events</li>
                 </ul>
 
                 <div class="cta-wrapper">
-                    <!-- Triggers the Dashboard Modal -->
-                    <button id="openDashboardBtn" class="btn">View Upcoming Events</button> <!--[cite: 1] -->
+                    <button id="openDashboardBtn" class="btn">View Upcoming Events</button>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- ---------------------------------------------------
-         Event Dashboard Modal (Simulation)
-         --------------------------------------------------- -->
     <div id="dashboardModal" class="modal">
         <div class="modal-content">
             
@@ -433,9 +421,8 @@
             </div>
             
             <div class="dashboard-body">
-                <!-- Regional Filters Sidebar -->
                 <aside class="dashboard-sidebar">
-                    <h4>Regional Filters <!--[cite: 1] --></h4>
+                    <h4>Regional Filters</h4>
                     <div class="filter-group">
                         <label class="filter-label"><input type="checkbox" checked> All Regions</label>
                         <label class="filter-label"><input type="checkbox"> North Island</label>
@@ -452,19 +439,15 @@
                     </div>
                 </aside>
                 
-                <!-- Main Content Area -->
                 <section class="dashboard-main">
                     
-                    <!-- Dashboard Tabs -->
                     <div class="dash-tabs">
                         <button class="dash-tab active" onclick="switchDashTab('events')">Upcoming Events</button>
-                        <button class="dash-tab" onclick="switchDashTab('gallery')">Photo Gallery <!--[cite: 1] --></button>
+                        <button class="dash-tab" onclick="switchDashTab('gallery')">Photo Gallery</button>
                     </div>
                     
-                    <!-- Events List Tab (Event Calendar Simulation) -->
                     <div id="eventsTab" class="dash-content active">
                         
-                        <!-- Event 1 -->
                         <div class="event-card">
                             <div class="event-details">
                                 <h3>Southern Alps Summit Hike</h3>
@@ -476,11 +459,10 @@
                                 <p style="margin:0; font-size: 0.95rem;">Join us for a challenging but rewarding multi-day hike. Designed to test resilience and build strong bonds among peers.</p>
                             </div>
                             <div class="event-action">
-                                <button class="btn btn-small">Register</button> <!--[cite: 1] -->
+                                <button class="btn btn-small">Register</button>
                             </div>
                         </div>
 
-                        <!-- Event 2 -->
                         <div class="event-card">
                             <div class="event-details">
                                 <h3>Whānau BBQ & Meetup</h3>
@@ -492,11 +474,10 @@
                                 <p style="margin:0; font-size: 0.95rem;">A relaxed afternoon for veterans and their families to connect. Food provided, kids welcome!</p>
                             </div>
                             <div class="event-action">
-                                <button class="btn btn-small">Register</button> <!--[cite: 1] -->
+                                <button class="btn btn-small">Register</button>
                             </div>
                         </div>
 
-                        <!-- Event 3 -->
                         <div class="event-card">
                             <div class="event-details">
                                 <h3>Backcountry Fly Fishing</h3>
@@ -508,15 +489,14 @@
                                 <p style="margin:0; font-size: 0.95rem;">Escape into nature and learn the art of fly fishing with experienced guides from within our community.</p>
                             </div>
                             <div class="event-action">
-                                <button class="btn btn-small">Register</button> <!--[cite: 1] -->
+                                <button class="btn btn-small">Register</button>
                             </div>
                         </div>
 
                     </div>
 
-                    <!-- Photo Gallery Tab Simulation -->
                     <div id="galleryTab" class="dash-content">
-                        <p style="margin-bottom: 1rem;">Highlights from past SSAANZ deployments and community gatherings. <!--[cite: 1] --></p>
+                        <p style="margin-bottom: 1rem;">Highlights from past SSAANZ deployments and community gatherings.</p>
                         <div class="sim-gallery">
                             <div>[Image Placeholder]</div>
                             <div>[Image Placeholder]</div>
@@ -534,14 +514,11 @@
         </div>
     </div>
 
-    <!-- Footer Injection -->
     <footer id="site-footer"></footer>
 
-    <!-- Inject Header and Footer Scripts -->
     <script src="header.js"></script>
     <script src="footer.js"></script>
 
-    <!-- Modal Logic Script -->
     <script>
         // Get the modal and buttons
         const dashModal = document.getElementById("dashboardModal");
